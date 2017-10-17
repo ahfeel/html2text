@@ -337,6 +337,7 @@ class Html2Text {
 			}
 
 			// suppress last br tag inside a node list if follows text
+			/*
 			$last_name = array_pop($previousSiblingNames);
 			if ($last_name === 'br') {
 				$last_name = array_pop($previousSiblingNames);
@@ -344,6 +345,7 @@ class Html2Text {
 					array_pop($parts);
 				}
 			}
+			*/
 
 			$output .= implode('', $parts);
 		}
